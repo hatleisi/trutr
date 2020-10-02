@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Countdown</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Description" content="Put your description here." />
+  <meta name="theme-color" content="#317EFB" />
+  <link rel="manifest" href="/manifest.json" />
+  <link
+    rel="icon"
+    href="https://cdn.glitch.com/31ef7da0-8307-4c1b-a4f4-923f1685eda1%2Ffavicon.ico?v=1578945880085"
+    type="image/x-icon"
+  />
+  <link rel="apple-touch-icon" href="/images/apple-icon-152x152.png" />
+
+  <body>
+    <div class="timer">
+      <h1 id="t">Countdown Timer</h1>
+      <br />
+      <div id="time">0:00</div>
+      <br />
+      <button id="button" onclick="startCountdown()">Start Timer</button>
+      <input id="tim" type="number" aria-label="tim" value="0" />
+      <div class="header">
+        <button id="butInstall" aria-label="Install" hidden></button>
+      </div>
+    </div>
+
+    <script src="addserviceworker.js"></script>
+    <script src="script.js"></script>
+    <script src="install.js"></script>
+  </body>
+</html>
